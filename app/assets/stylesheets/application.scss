@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require sprockets-octicons
+ *= require_tree .
+ *= require_self
+ */
+
+@import "materialize";
+@import "application.css";
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,100italic,300italic);
+
+
+@font-face {
+  font-family:'lemonmilk';
+  src:font-url('lemonmilk-webfont.eot');
+}
+
+html {
+    font-weight: 700;
+    font-family: 'lemonmilk';
+    font-size: 250%;
+    font-style: italic;
+    background-image: linear-gradient(#fffc64 23.5%, white 10%);
+
+    /*background-color: #fffc64;*/
+  }
+
+#helvetica {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 250%;
+    font-weight:100;
+    font-style:normal;
+    margin-bottom:0px;
+    padding-bottom:40px;
+    line-height: 150px;
+  }
+
+h1 {
+    line-height: 0px;
+  }
+
+.text-header {
+	font-family: 'lemonmilk';
+	font-size: 150%;
+}
+
+#genius {
+    margin-top:0px;
+    padding-top:0px;
+  }
+
+.lev {
+    font-style:normal;
+  }
+
+.hire {
+    font-family: 'helvetica';
+    background: #fff;
+    height: 88px;
+    width: 50%;
+    padding :0px;
+    border: .4vw solid #000;
+    font-style: normal;
+    margin-left:26%;
+    position: relative;
+  }
+
+.hire:hover {
+	color: white;
+	background-color: black;
+}
+
+.description {
+	margin-left: 16.6%;
+	width: 66.6%;
+	font-size:50%;
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 300;
+}
+
+hr {
+	margin-top: 3em;
+}
+
+.code {
+	border: 3px solid #b19cd9;
+	background-color: #2E2E2E;
+	margin: 1em;
+	padding: 0.25em;
+	color: white;
+}
