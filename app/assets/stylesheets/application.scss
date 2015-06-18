@@ -18,14 +18,13 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,100italic,300italic);
 
 
-@font-face {
-  font-family:'lemonmilk';
-  src:font-url('/assets/fonts/lemonmilk-webfont.eot');
-}
+$font-face: 'lemonmilk';
+$src: font-url('/assets/fonts/lemonmilk-webfont.eot');
 
 html {
     font-weight: 700;
-    font-family: 'lemonmilk';
+    font-family: $font-face;
+		src: $src;
     font-size: 250%;
     font-style: italic;
     background-image: linear-gradient(#fffc64 23.5%, white 10%);
@@ -48,7 +47,8 @@ h1 {
   }
 
 .text-header {
-	font-family: 'lemonmilk';
+	font-family: $font-face;
+	src: $src;
 	font-size: 150%;
 }
 
